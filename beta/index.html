@@ -1,133 +1,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bhauthik.css" />
-    <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Staatliches&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-
-<script>
-$(document).ready(function(){
-  $(".hamburger").on("click", function(){
-    $(".navbar").toggleClass("open");
-  });
-});
-</script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans&family=Noto+Serif:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Bhauthik.com</title>
-</head>
-<body >
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init({      
-  })</script>
-  <div class='burger-nav'><a class='hamburger'><div id="menuToggle">
-    <input type="checkbox" />
-    <span id="span1"></span>
-    <span id="span2"></span>
-    <span id="span3"></span>
-</div></a></div>
-  <div class='navbar'>
-    
+
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+      
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+         
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+      </script>
+
+    </head>
+<body>
+    <div class='burger-nav'><a class='hamburger'><div id="menuToggle">
+        <input type="checkbox" />
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+    </div></a></div>
+       <div class='navbar'>
+        
+      <ul>
+        <li><a  href='#home'>Home</a></li>
+        <li ><a href='#about'>About</a></li>
+        <li ><a href='#mentors'>Mentors</a></li>
+        <li ><a href='#contact'>Contact</a></li>
+      </ul>
+    </div> 
+<div class='home' id='home'>
+<div class="parallax">
+    <img src='logo.png'/>
+</div>
+</div>
+
+<div class='about' id='about'>
+    <div class='darktint'>
+    <div class='abouttitle' > <h1>WHO WE ARE</h1></div>
+    <!-- <div class='abouttrapezoid'></div> -->
+  <div class='aboutp'>  
+      <p>We are a bunch of IIT grads passionate about teaching and helping our students reach their full potential. We have moulded an effective and proven teaching formula from our own experiences while tackling various competitive exams like NET / GATE / JEST / JAM. At Bhauthik, our mentors are proactive researchers from all around the globe, who are also highly skilled at the art of teaching. We assure you that cracking a competitive exam is not just based on your subject knowledge and IQ, but more on your ability to work hard and a bit of determination. Don't worry; we are here to help you cultivate this habit of smart-learning through our uniquely devised strategies. 
+      <!-- like online test-series, problem-oriented live classes (100+ solved problems per week), career-based webinars, bonus classes on special topics, motivational sessions and many more!  -->
+      And you get all these benefits without burning a hole in your pockets!
+       <!-- Contact us today for a free consultation.  -->
+    </p>
+  </div> 
+  <div class='features'>
+      <h2>Our Special Features</h2>
   <ul>
-    <li><a  href='#home'>Home</a></li>
-    <li ><a href='#about'>About</a></li>
-    <li ><a href='#mentors'>Mentors</a></li>
-    <li ><a href='#contact'>Contact</a></li>
+      <li>Online test-series</li>
+      <li>Problem-oriented live classes</li>
+      <li>100+ solved problems per week</li>
+      <li>Career-based webinars</li>
+      <li>Bonus classes on special topics</li>
+      <li>Motivational sessions </li>
+      <li>E-training with worldwide researchers</li>
+      <li>Guest sessions by eminent professors</li>
+      <li>Topic-wise simulations and interactive demonstrations</li>
   </ul>
 </div>
-    <!--Hey! This is the original version
-of Simple CSS Waves-->
-
-<div class="home" id='home'>
-
-    <!--Content before waves-->
-    <div class="inner-header">
-    <!--Just the logo.. Don't mind this-->
-    <img class='logo animate__animated animate__fadeInUp'src='logo.png'/>
-    </div>
-  
-    <div class="inner-header-text animate__animated animate__fadeInUp"><h1>Register for our courses..</h1></div>
-    <div class="row">
-      <div class="reg-button animate__animated animate__zoomIn" > <a href="#popup1"  class="animated-button victoria-one open-popup">csir net/ gate / gest</a> </div>
-      <div class="reg-button animate__animated animate__zoomIn" > <a href="#popup1"  class="animated-button victoria-one">JAM</a> </div>
-      </div>  
-
-      <div id="popup1" class="overlay">
-        <div class="popup">
-          <h2>Registration</h2>
-          <a class="close" href="#">&times;</a>
-          <div class="content">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1LSvctI0mRSOwUtt52_1bs9p6PZf3UxISWBSfm2QUkkp0NA/viewform?embedded=true" width="640" height="1403" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-          </div>
-        </div>
-      </div>
-
-      </div>
-    <!--Waves Container-->
-    <div>
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-    <defs>
-    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-    </defs>
-    <g class="parallax">
-    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(240, 185, 66,0.7)" />
-    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(240, 185, 66,0.5)" />
-    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(240, 185, 66,0.3)" />
-    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(240, 185, 66)" />
-    </g>
-    </svg>
-    </div>
-    <!--Waves end-->
-    
-    </div>
-    <!--Header ends-->
-    
-    <!--Content starts-->
-    <div class="content">
-    </div>
-    <!--Content ends-->
-    
-    <div class='about' id='about'>
-       <div class='abouttitle' data-aos="zoom-in-down"  data-aos-duration="1500"> <h2>WHO WE ARE</h2></div>
-     <div class='aboutp' data-aos="fade-down"  data-aos-duration="1500">  <p>We are a bunch of IIT grads passionate about teaching and helping our students reach their full potential. We have moulded an effective and proven teaching formula from our own experiences while tackling various competitive exams like NET / GATE / JEST / JAM. At Bhauthik, our mentors are proactive researchers from all around the globe, who are also highly skilled at the art of teaching. We assure you that cracking a competitive exam is not just based on your subject knowledge and IQ, but more on your ability to work hard and a bit of determination. Don't worry; we are here to help you cultivate this habit of smart-learning through our uniquely devised strategies like online test-series, problem-oriented live classes (100+ solved problems per week), career-based webinars, bonus classes on special topics, motivational sessions and many more! And you get all these benefits without burning a hole in your pockets! Contact us today for a free consultation. </p>
-     </div> 
-    <div class='joinp'  data-aos="fade-down" data-aos-duration="1500"><h2>Join the Bhauthik family, and we will make sure that the journey to your dream institute will be an enriching one.</h2></div>
-    <div class='values'>
+</div>
+<div class='values'>
 
     <div class="flip-card" data-aos="flip-left"  data-aos-duration="1500">
         <div class="flip-card-inner">
@@ -166,175 +125,186 @@ of Simple CSS Waves-->
       </div> 
 
 </div> 
-
+<div class='ftext' >
+    <h2>Want to know more about us,<br/> drop
+    us an <span class='big1'>E-MAIL</span> now<span class='big1'>!</span> 
+    </h2>
     </div>
-    <div class='mentors' id='mentors'>
-
-      <div class='menthead1' data-aos="zoom-in-down" data-aos-duration="1500">  <h2>CHEIF MENTORS</h2></div>
-
-<div class='cheifmentors'>
-    <div class="wrapper1" data-aos="fade-right" data-aos-duration="1500">
-        <div class="product-img">
-          <img src="Firoz.jpg" > 
-        </div>
-        
-          
-            <h1>ANU BABUSENAN</h1>
-            <h2>PhD, Department of Physics, IIT Madras</h2>
-            <p>
-                
-                <li>	Current status: Research Associate on next generation AMOLED displays at MEMS, Department of Electrical Engineering, IIT Madras 
-                </li><li>	Young Scientist award from NCSC
-                </li><li>	Expertize: Ultrafast Laser spectroscopy, Organic electronics, Micro-electronic device fabrication, Design and setup of spectroscopic experiments.
-                </li><li>	5 years’ experience as a teaching Assistant at IIT Madras (for BTech and MSc)
-                </li><li>	Other interests: Science writer (Malayalam), Science correspondent for newspapers</li>
-            
-            </p>
-    
-          
-         
-      </div>
-      <div class="wrapper2" data-aos="fade-left" data-aos-duration="1500">
-          <div class="product-img">
-            <img src="Firoz.jpg" >
-          </div>  
-          
-            <h1>SURAJ T S</h1>
-            <h2>PhD, Department of Physics, IIT Madras</h2>
-            <p>
-                
-                    <li>	DAAD Fellow at Walther Meissner Institute, Technical University of Munich (TUM), Germany.
-                    </li><li>	Visiting Research Fellow at NUSNNI, NUS Singapore.
-                    </li><li>	JASSO Fellow in SIT Tokyo Japan.
-                    </li><li>	Expertize: Spintronics (Spin transport through oxide heterostructures), Superconductivity and Strongly correlated systems
-                    </li><li>	5 years’ experience as a teaching Assistant at IIT Madras (for BTech and MTech)
-                    </li>
-            
-            </p>
-    
-          
-         
-      </div>
-      <div class="wrapper3" data-aos="fade-right" data-aos-duration="1500">
-          <div class="product-img">
-            <img src="Firoz.jpg" >
-          </div>  
-           <h1>DR.DILEEP KOTTILIL</h1>
-            <h2>PhD (Physics) from IIT Madras & NUS Singapore</h2>
-            <p>
-            
-                <li>	MSc Physics from IIT Madras
-                </li><li>	Specialization: Polariton Physics, Femtosecond Lasers, Nonlinear Optics & Multi-Photon Microscopy
-                </li><li>	4+ years of experience as a teaching assistant at IIT Madras and NUS Singapore
-                </li><li>	Current position: Research Fellow at NUS, Singapore
-                </li><li>	Other roles: Science Blogger, Research Software Developer, Embedded System Developer, Machine Learning Programmer
-                </li>  
-            
-            </p>
-    
-          
-        
-      </div>
-      <div class="wrapper4" data-aos="fade-left" data-aos-duration="1500">
-         <div class="product-img">
-            <img src="Firoz.jpg" >
-          </div>  
-          
-            <h1>M JUVAID</h1>
-            <h2>PhD (Physics) from IIT Madras & NUS Singapore</h2>
-            <p>
-            <li>	Masters (M. Tech. Physics & Electrical Engineering) from IIT Madras.
-            </li><li>	Specialization: Experimental Condensed Matter Physics, 2D materials and device applications
-            </li><li>	Visiting Research Fellow, University of Bristol, UK
-            </li><li>	Research Assistant, NUS, Singapore
-            </li><li>	3 years of experience as a teaching assistant at IIT Madras (for both B. Tech and M. Tech)
-            </li>
-            
-            </p>
-    
-          
-        
-      </div>
-      
+    <a href="mailto:firozfazil76@gmail.com"><div class="yround1"><img src='mail.ico'/></div></a>
 </div>
- <div class='menthead2' data-aos="zoom-in-down" data-aos-duration="1500"> <h2>ADDITIONAL JAM MENTORS</h2></div>
-    <div class='othermentors'>
-        <div class="card" data-aos="flip-down" data-aos-duration="1500">
-            
-                <img src="Firoz.jpg" alt="Avatar" style="width:60%;height:auto;">
-                <div>
-                    <h3>ANUSREE V K</h3>
-                <li> MSc Physics from IIT Madras
-                </li><li> PhD (doing), Department of Physics, IIT Madras
-                </li><li> Research interest:  Structure-property correlations in magnetic perovskite oxides
-                </li>
-                
-              </div>
+<div class='parallax2'>
+  <div class='mentors' id='mentors'>
+<div class='amentors'>
+    
+    <div class='amenttitle'><h1>CHEIF MENTORS</h1></div>
+    <div class='ament1'><div class='amentc1'><img src='Firoz(1).png'/></div><h3>Anu Babusenan</h3><h4>PHD, PHYSICS, IIT MADRAS</h4>
+    <a onclick="document.getElementById('qt').innerHTML=document.getElementById('anu').innerHTML;">Learn More..</a></div>
+    <div class='ament2'><div class='amentc2'><img src='Firoz(1).png'/></div><h3>Suraj T S</h3><h4>PHD, PHYSICS, IIT MADRAS</h4>
+    <a onclick="document.getElementById('qt').innerHTML=document.getElementById('suraj').innerHTML;">Learn More..</a></div>
+    <div class='ament3'><div class='amentc3'><img src='Firoz(1).png'/></div><h3>Dr.Dileep Kottilil</h3><h4>PHD, PHYSICS, IIT MADRAS & NUS</h4>
+    <a onclick="document.getElementById('qt').innerHTML=document.getElementById('dileep').innerHTML;">Learn More..</a></div>
+    <div class='ament4'><div class='amentc4'><img src='Firoz(1).png'/></div><h3>M Juvaid</h3><h4>PHD, PHYSICS, IIT MADRAS & NUS</h4>
+    <a onclick="document.getElementById('qt').innerHTML=document.getElementById('juvaid').innerHTML;">Learn More..</a></div>
+    
+    <div id='anu' class='details' style="visibility: hidden;"><h1>ANU BABUSENAN</h1><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a onclick="document.getElementById('qt').innerHTML=document.getElementById('default').innerHTML;">Back</a>
+    </div>
+    <div id='suraj' class='details' style="visibility: hidden;"><h1  class='detailsh1'>SURAJ TS</h1><p  class='detailsp'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu</p>
+         <a onclick="document.getElementById('qt').innerHTML=document.getElementById('default').innerHTML;">Back</a>
+    </div>
+    <div id='dileep' class='details' style="visibility: hidden;"><h1>DR.DILEEP KOTTILIL</h1><p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremel</p>
+        <a onclick="document.getElementById('qt').innerHTML=document.getElementById('default').innerHTML;">Back</a>
+    </div>
+    <div id='juvaid' class='details' style="visibility: hidden;"><h1>M JUVAID</h1><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo mi</p>
+        <a onclick="document.getElementById('qt').innerHTML=document.getElementById('default').innerHTML;">Back</a>
+    </div>
+    <div class='qtext' id='default' style="visibility: hidden;" >
+        <h2>A good <span class='big'>TEACHER</span> can inspire <span class='big'>HOPE</span>, ignite the
+        <span class='big'>IMAGINATION</span>, and instill a love of <span class='big'>LEARNING</span>. 
+        </h2>
+    <h6>-BRAD HENRY</h6>
+    </div>
+
+<div class='atrapezoid'>
+<div class='quote'><h1>,,</h1></div>
+<div class="qt" id='qt'>
+
+    <div class='qtext' >
+        <h2>A good <span class='big'>TEACHER</span> can inspire <span class='big'>HOPE</span>, ignite the
+        <span class='big'>IMAGINATION</span>, and instill a love of <span class='big'>LEARNING</span>. 
+        </h2>
+    <h6>-BRAD HENRY</h6>
+    </div>
+
+</div>
+
+    <div class='quote'><h1>,,</h1></div>
+
+</div>
+</div>
+
+
+    
+    
+ 
+<div class='bmentors'>
+  <div class='bmenttitle'><h1>OTHER JAM MENTORS</h1></div>
+
+  <div id='d1c' style="visibility: hidden;">
+    <h3 style=" color:#6E2594 ;  ">Anusree V K</h3>
+  <li style="list-style-type: none; padding-top: 2%; "><h4>MSc Physics, IIT Madras</h4>
+  </li><li style="list-style-type: none; "><h4>PhD (doing), Department of<br/>Physics, IIT Madras</h4>
+  </li><li style="list-style-type: none; "><h4>Research interest: Structure-property correlations in magnetic perovskite oxides</h4>
+  </li>
+  <div style="transform: rotate(180deg);"><a  onclick="document.getElementById('d1').innerHTML=document.getElementById('d1d').innerHTML;">^</a></div> 
+  </div>
+
+  <div id='d2c' style="visibility: hidden;">
+    <h3 style=" color:#6E2594 ;  ">Jobin Sebastian</h3>
+  <li style="list-style-type: none; padding-top: 2%;"><h4>MSc Physics, IIT Madras</h4>
+  </li><li style="list-style-type: none; "><h4>PhD (doing), Department of<br/>Physics, NISER Bhubaneswar</h4>
+  </li><li style="list-style-type: none; "><h4>Research interest: Dynamics of Heavy quark and quarkonia in the cooling phase QCD medium</h4>
+  </li>
+  <div style="transform: rotate(180deg);"><a  onclick="document.getElementById('d2').innerHTML=document.getElementById('d2d').innerHTML;">^</a></div> 
+  </div>
+
+  <div id='d3c' style="visibility: hidden;">
+    <h3 style=" color:#6E2594 ;  ">Mufeed K</h3>
+  <li style="list-style-type: none; padding-top: 2%; "><h4>MSc, Physics, IIT Madras</h4>
+  </li><li style="list-style-type: none; "><h4>PhD, CRISMAT, Caen, France</h4>
+  </li><li style="list-style-type: none; "><h4>Research interest:  2D materials, Superconductivity in Nickelate heterostructures</h4>
+  </li>
+  <div style="transform: rotate(180deg);"><a  onclick="document.getElementById('d3').innerHTML=document.getElementById('d3d').innerHTML;">^</a></div> 
+  </div>
+  
+  
+  <div id='d4c'  style="visibility: hidden;">
+    <h3 style=" color:#6E2594 ; ">Sruthibhai</h3>
+  <li style="list-style-type: none; padding-top: 2%; "><h4>BS-MS, Physics, IISER Bhopal</h4>
+  </li><li style="list-style-type: none; "><h4>INSPIRE fellow</h4>
+  </li><li style="list-style-type: none; "><h4>Research interests: Photonic crystals, Non-linear optics and laser spectroscopy</h4>
+  </li>
+  <div style="transform: rotate(180deg);"><a  onclick="document.getElementById('d4').innerHTML=document.getElementById('d4d').innerHTML;">^</a></div> 
+  </div> 
+ 
+  <div class='bment1' id='d1d' style="visibility: hidden;"><div class='bmentc1'><img src='Firoz(1).png'/></div><h3>Anusree V K</h3><h4>MSC, PHYSICS, IIT MADRAS</h4>
+    <a onclick="document.getElementById('d1').innerHTML=document.getElementById('d1c').innerHTML;">^</a></div>
+    <div class='bment2' id='d2d' style="visibility: hidden;"><div class='bmentc2'><img src='Firoz(1).png'/></div><h3>Jobin Sebastian</h3><h4>MSC, PHYSICS, IIT MADRAS</h4>
+    <a onclick="document.getElementById('d2').innerHTML=document.getElementById('d2c').innerHTML;">^</a></div>
+ <div class='bment3' id='d3d' style="visibility: hidden;"><div class='bmentc3'><img src='Firoz(1).png'/></div><h3>Mufeed K</h3><h4>MSC, PHYSICS, IIT MADRAS</h4>
+ <a onclick="document.getElementById('d3').innerHTML=document.getElementById('d3c').innerHTML;">^</a></div>
+ <div class='bment4' id='d4d' style="visibility: hidden;"><div class='bmentc4'><img src='Firoz(1).png'/></div><h3>Sruthibhai</h3><h4>BS-MS, PHYSICS, IISER BHOPAL</h4>
+ <a onclick="document.getElementById('d4').innerHTML=document.getElementById('d4c').innerHTML;">^</a></div> 
+ 
+    <div class='bment1' id='d1'><div class='bmentc1'><img src='Firoz(1).png'/></div><h3>Anusree V K</h3><h4>MSC, PHYSICS, IIT MADRAS</h4>
+    <a onclick="document.getElementById('d1').innerHTML=document.getElementById('d1c').innerHTML;">^</a></div>
+    <div class='bment2' id='d2'><div class='bmentc2'><img src='Firoz(1).png'/></div><h3>Jobin Sebastian</h3><h4>MSC, PHYSICS, IIT MADRAS</h4>
+    <a onclick="document.getElementById('d2').innerHTML=document.getElementById('d2c').innerHTML;">^</a></div>
+    <div class='bment3' id='d3'><div class='bmentc3'><img src='Firoz(1).png'/></div><h3>Mufeed K</h3><h4>MSC, PHYSICS, IIT MADRAS</h4>
+    <a onclick="document.getElementById('d3').innerHTML=document.getElementById('d3c').innerHTML;">^</a></div>
+    <div class='bment4' id='d4'><div class='bmentc4'><img src='Firoz(1).png'/></div><h3>Sruthibhai</h3><h4>BS-MS, PHYSICS, IISER BHOPAL</h4>
+    <a onclick="document.getElementById('d4').innerHTML=document.getElementById('d4c').innerHTML;">^</a></div>
+
+<div class='btrapezoid'>
+<div class='qt2'>
+    <h2>Want to talk<br/> with our mentors and <br/>get your doubts cleared, <br/><span class='big3'>contact</span> us today for a free consultation<span class='big3'>.</span>
+        </h2> 
+</div>
+<a href="tel:+91-9447693222"><div class="yround"><img src='call.png'/></div></a>
+</div>
+</div>
+</div>
+<div class='joinquote'>
+    <div class='qt3'>
+       <h2>Join the <span class='big4'>Bhauthik</span> family</h2><br/><h3>and we will make sure that the<br/>journey to your dream institute</h3><br/><h2>will be an enriching one<span class='big4'>.</span></h2>
+    </div>
+</div>
+<div class='registration'>
+  <h2><span class='big5'>register</span> for our courses today<span class='big5'>!</span> 
+    </h2>
+    <div class="bt1"><a href="#popup1">jam</a></div>
+    <div class="bt2"><a href="#popup1">csir net/ gate / gest</a></div>
+
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Registration</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1LSvctI0mRSOwUtt52_1bs9p6PZf3UxISWBSfm2QUkkp0NA/viewform?embedded=true" width="640" height="1403" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
-        
-        <div class="card" data-aos="flip-down" data-aos-duration="1500">
-           
-                <img src="Firoz.jpg" alt="Avatar" style="width:60%;height:auto;">
-                <div>
-                    <h3>JOBIN SEBASTIAN</h3>
-                <li> MSc Physics from IIT Madras
-                </li><li>PhD (doing), Department of Physics, NISER Bhubaneswar
-                </li><li> Research interest:  Dynamics of Heavy quark and quarkonia in the cooling phase QCD medium
-                </li> 
-              
-            </div>
-              </div>   
-        
-        <div class="card" data-aos="flip-down" data-aos-duration="1500">
-                <img src="Firoz.jpg" alt="Avatar" style="width:60%;height:auto;">
-                <div>
-                    <h3>MUFEED K</h3>
-                <li>MSc Physics from IIT Madras
-                </li><li>PhD, CRISMAT, Caen, France
-                </li><li>Research interest:  2D materials, Superconductivity in Nickelate heterostructures
-                </li> 
-                </div>
-              
-              </div>
-        
-            <div class="card" data-aos="flip-down" data-aos-duration="1500">
-                
-                    <img src="Firoz.jpg" alt="Avatar" style="width:60%;height:auto;">
-                    <div>
-                        <h3>SRUTHIBHAI</h3>
-                    <li> BS-MS (Physics) from IISER Bhopal
-                    </li><li>  INSPIRE fellow
-                    </li><li>  Research interests:  Photonic crystals, Non-linear optics and laser spectroscopy
-                    </li>
-                    </div>
-                  
-            </div>
-            
-        
-        
-    </div> 
-    </div> 
-     <div class='contact' id='contact'>
-       <h1>GET IN TOUCH</h1>
+      </div>
+    </div>
 
+</div>
+<div class='whatsappquote'>
+  <div><h2>chat with us through <span class='big6'>whatsapp</span><br/> to know more about our<br/> courses and registration<span class='big6'>.</span>
+  </h2></div> 
+  <a href="https://api.whatsapp.com/send?phone=919447693222"><div class='yround3'><img src='whatsapp.ico'/></div></a>
+</div>
+
+<div class='contact' id='contact'>
+<h1>CONNECT WITH US</h1>
+
+<div class='contactsect'>
+  <h2>E-MAIL</h2>
+  <a href="mailto:firozfazil76@gmail.com"><h3>abc@gmail.com</h3></a>
+         </div>
+  
        <div class='contactsect'>
-<h2>E-MAIL</h2>
-<h3>abc@gmail.com</h3>
-       </div>
-
-     <div class='contactsect'>
-      <h2>CALL</h2>
-      <h3>Name1: 9999999999</h3>
-      <h3>Name2: 9999999999</h3>
-             </div>
-        
-
-           <div class='contactsect'>
-             <h2>SOCIAL LINKS</h2>
-           </div>
+        <h2>CALL</h2>
+        <h3><a href="tel:+91-9447693222">Name1: 9999999999</a></h3>
+        <h3><a href="tel:+91-9447693222">Name2: 9999999999</a></h3>
+               </div>
           
+  
+             <div class='contactsect'>
+               <h2>SOCIAL LINKS</h2>
+             </div>
+            </div>
+             <div class='footer'><h4>Copyright &COPY; Bhauthik2020</h4></div>
 
-          <h4>Bhauthik &COPY; 2020</h4>
-        </div> 
+
+
+
 </body>
 </html>
