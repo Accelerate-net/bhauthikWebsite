@@ -83,11 +83,11 @@ cursor: pointer;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 511px;
+  width: 513px;
   position: relative;
   transition: all 5s ease-in-out;
   z-index: 2;
-
+overflow: hidden;
 }
 
 .popup0 h2 {
@@ -110,7 +110,7 @@ cursor: pointer;
 }
 .popup0 .content0 {
   height: 70%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .content0 img{
@@ -161,36 +161,143 @@ cursor: pointer;
     font-family: 'Roboto', sans-serif;
     vertical-align: middle;
     padding-top: .5vw;
+    overflow: hidden;
   }
+
+   /* .animate__animated.animate__pulse {
+    --animate-duration: 10s;
+  }  */
 
   .parallax img{
       width:65%;
       position: relative;
-      top:12vw;
+      top:7vw;
       left:2%;
   }
 
   .parallax h2{
     position: relative;
-    top:12vw;
+    top:7vw;
     left:12%;
     font-size: 1.8vw;
-    font-family: 'Roboto', sans-serif;
+  
     width:50%;
     text-align:center;
+    font-family: 'Oswald', sans-serif;
   }
 
   .large{
-    font-size: 2vw;
-  }
+    padding-right: 10%;
+    padding-left: 10%;
+    color: black;
+    font-size: 2.5vw;
+    font-family: 'Roboto', sans-serif;
+      }
 
   .red {
-    color: #ff1b1c;
+    color:#ff1b1c;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .coursebox{
+    background-color: transparent;
+    width:17vw;
+    height:12vw;
+position: absolute;
+top:32vw;
+left:18%;
+border-radius: 10px;
+border-top: 3px solid #ECD444;
+border-bottom: 3px solid #ECD444;
+  }
+
+  .coursebox h2{
+    top:0%;
+    left:0;
+    width:100%;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .05vw;
+
+  }
+
+  .cbt{
+                      
+    width:80%;
+    background-color:black ;
+    color: #ECD444;
+    position: absolute;
+    left:10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
+box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
+text-align: center;
+font-size: 1.3vw;
+border-radius: 7px;
+font-family: 'Poppins', sans-serif;
+
+  }
+
+  .cbt a{
+    color: #ECD444;
+    text-decoration: none;
+  }
+
+  .cbt a:hover{
+    color:white;
+  }
+
+  .regbox{
+    background-color: transparent;
+    width:17vw;
+    height:12vw;
+    position: absolute;
+    top:32vw;
+left:38%;
+border-radius: 10px;
+border-top: 3px solid #ECD444;
+border-bottom: 3px solid #ECD444;
+  }
+
+  .regbox h2{
+    top:0%;
+    left:0;
+    width:100%;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .05vw;
+  }
+
+  .rbt{
+                      
+    width:80%;
+    background-color:black ;
+    color: #ECD444;
+    position: absolute;
+    left:10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
+box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
+text-align: center;
+font-size: 1.3vw;
+border-radius: 7px;
+font-family: 'Poppins', sans-serif;
+  }
+
+  .rbt a{
+    color: #ECD444;
+    text-decoration: none;
+  }
+
+  .rbt a:hover{
+    color:white;
   }
 
   .about{
     width:100%;
-    height:58.5vw;
+    height:60.5vw;
     position: relative;
     text-align: center;
     background: url("bookbg.jpg");
@@ -210,12 +317,12 @@ cursor: pointer;
     position: absolute;
     top:0;
     left:0;
-    height:58.5vw;
+    height:60.5vw;
   }
 
   .abouttitle{
-    height:7vw;
-    width:35%;
+    height:6vw;
+    width:28%;
     font-size: 2.3vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 700px;
@@ -223,7 +330,7 @@ cursor: pointer;
     padding-top: 0;
     position: relative;
     border-bottom: 2px solid white;
-    padding-left: 1%;
+    padding-left: 5%;
     /* background: rgb(212,212,211);
     background: linear-gradient(183deg, rgba(212,212,211,1) 0%, rgba(210,210,210,1) 50%, rgba(255,255,255,1) 100%);  */
 }
@@ -235,12 +342,12 @@ cursor: pointer;
 
 .aboutp{
   position: absolute;
-  top:8vw;
+  top:7vw;
   left:0;
   padding:0;
-  padding-left: 2%;
+  padding-left: 5%;
   text-align:left;
-  width:50%;
+  width:45%;
   font-size: 1.2vw;
   font-family: 'Roboto', sans-serif;
   word-spacing: .4vw;
@@ -251,7 +358,7 @@ cursor: pointer;
   margin:0;
   padding:0;
   position:absolute;
-  right:4%;
+  right:8%;
   text-align: left;
   top:0vw;
 }
@@ -270,6 +377,7 @@ list-style-image: url("ytick.png");
   font-size: 1.2vw;
   font-family: 'Roboto', sans-serif;
   letter-spacing: .05vw;
+  line-height:1.6vw ;
 }
 
 .values{
@@ -278,15 +386,15 @@ list-style-image: url("ytick.png");
   background: #ECD444;
   position: absolute;
   top:28vw;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 
 .ftext{
   background-color:#6E2594;
   color: white;
   width:100%;
-  top:43vw;
+  top:45vw;
   position: absolute;
   font-family: 'Bebas Neue', cursive;
   font-size: 2vw;
@@ -480,8 +588,8 @@ padding-top:1.5vw;
 }
 
 .amenttitle{
-    height:7vw;
-    width:40%;
+    height:6vw;
+    width:32%;
     font-size: 2.3vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 700px;
@@ -489,7 +597,7 @@ padding-top:1.5vw;
     padding-top: 0;
     position: relative;
     border-bottom: 2px solid black;
-    padding-left: 1%;
+    padding-left: 5%;
     /* background: rgb(212,212,211);
     background: linear-gradient(183deg, rgba(212,212,211,1) 0%, rgba(210,210,210,1) 50%, rgba(255,255,255,1) 100%);  */
 }
@@ -671,8 +779,9 @@ margin-right:5vw;
 
             .qt a{
               
-                font-size: 1.3vw;
-                color:#ff1b1c ; 
+                font-size: 2.3vw;
+                color:#ff1b1c ;
+               
             }
              
 
@@ -701,7 +810,7 @@ margin-right:5vw;
 
             .bmenttitle{
               height:5vw;
-              width:59%;
+              width:24%;
               font-size: 1.8vw;
               font-family: 'Poppins', sans-serif;
               font-weight: 700px;
@@ -709,7 +818,7 @@ margin-right:5vw;
               padding-top: 0;
               position: relative;
               border-bottom: 2px solid black;
-              padding-right: 3%;
+              padding-right: 6%;
              }
           
           .bmenttitle h1{
@@ -777,13 +886,13 @@ margin-right:5vw;
           
                         .bmentors a{
                           color:#ff1b1c ;
-                            font-size: 1.4vw;
-                            font-weight: bolder;
+                            font-size: 1vw;
+                           
                         }
 
                         .bmenttitle2{
                           height:5vw;
-                          width:100%;
+                          width:33%;
                           font-size: 1.8vw;
                           font-family: 'Poppins', sans-serif;
                           font-weight: 700px;
@@ -791,7 +900,7 @@ margin-right:5vw;
                           padding-top: 0;
                           position: absolute;
                           border-bottom: 2px solid black;
-                          padding-right: 3%;
+                          padding-right: 6%;
                           top:27vw;
                           right:0;
                          }
@@ -914,7 +1023,7 @@ margin-right:5vw;
                         width:28vw;
                         height:28vw;
                         position: absolute;
-                        left:12%;
+                        left:15%;
                         border-radius: 50%;
                         font-family: 'Bebas Neue', cursive;
                         margin:0;
