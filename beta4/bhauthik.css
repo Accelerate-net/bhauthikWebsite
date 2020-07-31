@@ -75,11 +75,6 @@ cursor: pointer;
   opacity: 1;
   z-index: 2;
 }
- /* .overlay0:target {
-  visibility: hidden;
-  opacity: 0;
-  z-index: 2;
-}  */
 
 .popup0 {
   margin: 2% auto;
@@ -152,7 +147,7 @@ font-family: 'Bebas Neue', cursive;
   
   .parallax {
     /* The image used */
-    background-image: url('landingbg.jpg');
+    background-image: url('landingbg.png');
   
     /* Full height */
     height: 100vh; 
@@ -184,10 +179,6 @@ font-family: 'Bebas Neue', cursive;
     vertical-align: middle;
     overflow: hidden;
   }
-
-   /* .animate__animated.animate__pulse {
-    --animate-duration: 10s;
-  }  */
 
   .logo{
     left:5%;
@@ -331,19 +322,18 @@ font-family: 'Poppins', sans-serif;
 
   .dscrollcorr{
     position: absolute;
-    top: 113vw;
+    top: 100vw;
     left: 0;
     height: 40px;
     width: 100%;
   }
-
 
   .about{
     width:100%;
     height:53vw;
     position: relative;
     text-align: center;
-    background: url("bookbg.jpg");
+    background: url("bookbg.png");
     overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
@@ -374,9 +364,7 @@ font-family: 'Poppins', sans-serif;
     position: relative;
 
     padding-left: 5%;
-    /* background: rgb(212,212,211);
-    background: linear-gradient(183deg, rgba(212,212,211,1) 0%, rgba(210,210,210,1) 50%, rgba(255,255,255,1) 100%);  */
-}
+   }
 
 .abouttitle h1{
   margin:0;
@@ -458,8 +446,6 @@ padding-left: 0%;
   color:#fb8b24 ;
 }
 
-
-
 .flip-card {
   background-color: transparent;
   width: 10vw;
@@ -469,8 +455,7 @@ padding-left: 0%;
    display:inline-block;
    margin-left:5%;
    margin-right: 5%;
-   text-align: center;
-   
+   text-align: center;  
 }
 
 .flip-card-inner {
@@ -481,8 +466,7 @@ padding-left: 0%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius:50%;
-  
+  border-radius:50%;  
 }
 
 .flip-card:hover .flip-card-inner {
@@ -497,7 +481,6 @@ padding-left: 0%;
   backface-visibility: hidden;
   border-radius:50%;
   border: 4px solid black;
- 
 }
 
 .flip-card-front {
@@ -756,7 +739,6 @@ margin-right:5vw;
                 left:10%;
                 font-family: 'Bebas Neue', cursive;
                 margin:0;
-                /* transform: skew(10deg); */
                top:8vw;
                
               }
@@ -865,14 +847,6 @@ margin-right:5vw;
               top:8vw;
           }
           
-          /* .bment4{
-              text-align: center;
-              width:20vw;
-              position: absolute;
-              right:25%;
-              top:31vw;
-          } */
-          
             .bmentc{
           background: grey;
           height:8vw;
@@ -963,74 +937,13 @@ margin-right:5vw;
                 top:35vw;
             }
           
-                        .btrapezoid {
-                         
-                          
-                           
+                        .btrapezoid {    
                         height: 32vw;
                           width: 38%;
                           position:absolute;
                           top:0;
                           left:0;  
-                          /* background: url("whitebg1.jpg");
-                          overflow: hidden;
-                          background-position: center;
-                          background-repeat: no-repeat;
-                          background-size: cover;  */
                        } 
-
-                     /* .quote2 h1{
-                        font-size: 10vw;
-                        margin: 0;
-                        padding: 0;
-                        font-family: 'Bebas Neue', cursive;
-                        color:#fb8b24;
-                      }
-        
-                      .quote2:first-child{
-                          transform: rotate(180deg);
-                        position: absolute;
-                          top:5vw;
-                          left:5vw;
-                      }
-        
-                      .quote2:last-child{
-                          position: absolute;
-                          bottom:1vw;
-                          right:9.8vw;
-                      }
-        
-                      .qt2{
-                        width:70%;
-                        height:33vw;
-                        position: absolute;
-                        left:10%;
-                        font-family: 'Bebas Neue', cursive;
-                        margin:0;
-                      
-                       top:8vw;
-                       
-                      }
-        
-                      .qt2 h2{
-                          font-size: 3.4vw;
-                          margin: 0;
-                          color:#78290f;
-                          padding-top: 2vw;
-                      }
-
-                      .qt2 h6{
-                        font-size: 2vw;
-                        float:right;
-            margin:0;
-            margin-top: 2.5vw;
-            color:#78290f;
-                      }
-
-                      .big3{
-                        font-size: 5.3vw;
-                        color:#fb8b24 ;
-                    } */
 
                        .qt2{
                         width:28vw;
@@ -1062,34 +975,10 @@ margin-right:5vw;
                         color:#fb8b24 ;
                     } 
 
-                    /* .yround{
-                      width:7vw;
-                      height:7vw;
-                      background-color:#fb8b24 ;
-                      margin:0;
-                      border-radius: 50%;
-                      position: absolute;
-                      left:58%;
-                      top:63%;
-                      overflow: hidden;
-                    } */
-
-                    /* .yround img{
-                      width:60%;
-                      height: auto;
-                      padding-top: 20%;
-                    }
-
-                    .yround:hover{
-                      cursor: pointer;
-                      background-color:#bea931 ;
-                      
-                    } */
-
                     .joinquote{
                       width:100%;
                       height:25vw;
-                      background: url("whitebook.jpg");
+                      background: url("whitebook.png");
                      position: relative;
                       background-position: center;
                       background-repeat: no-repeat;
@@ -1105,7 +994,6 @@ margin-right:5vw;
                       font-family: 'Bebas Neue', cursive;
                       margin:0;
                       padding:0;
-                      /* transform: skew(10deg); */
                      top:28%;
                     color: black;
                      font-size: 3vw;
@@ -1116,8 +1004,6 @@ margin-right:5vw;
                       margin: 0;
                       font-size: 4.6vw;
                     }
-
-                    
 
                     .qt3 h3{
                       margin: 0;
@@ -1316,7 +1202,6 @@ margin-right:5vw;
                      
                       color:#9f9fa0;
                       font-family: 'Bebas Neue', cursive;
-                      /* border-bottom: 2px solid #fb8b24; */
                     }
 
 .contact a:hover{
@@ -1456,7 +1341,11 @@ margin-right:5vw;
                        padding-top: .5%;
                        padding-right: 7vw;
                      }
- /* ............................................................ */
+
+
+ /* ............................................................................................................... */
+/* ............................................................................................................... */
+
 
 @media (max-width: 1024px) {
   .parallax {
@@ -1537,11 +1426,12 @@ margin-right:5vw;
     font-size: 2.3vw;
     }
     
-    
-
 }
 
- /* .........................TABLETS....................... */
+
+ /* ...................................................TABLETS................................................. */
+  /* .......................................................................................................... */
+
 
 @media (max-width: 768px) {
 
@@ -1867,7 +1757,7 @@ margin-right:10vw;
 
             .dscrollcorr{
               position: absolute;
-              top: 330vw;
+              top: 300vw;
               width: 100%;
               height: 40px;
             }
@@ -2167,7 +2057,10 @@ margin-right:10vw;
 
 }
 
-/* ............................................................ */
+
+/* ....................................................................................................... */
+/* ....................................................................................................... */
+
 
 @media (max-width: 680px) {
 
@@ -2195,10 +2088,12 @@ margin-right:10vw;
   height:25px;
 }
 
-
-
 }
-/* .........................MOBILES....................... */
+
+
+/* ......................................................MOBILES................................................... */
+/* ......................................................MOBILES................................................... */
+
 
 @media screen and (max-width: 480px){
   .burger-nav{
@@ -2350,7 +2245,8 @@ padding-left: 5%;
 }
 
 iframe{
-  width:80vw;
+  width:100%;
+  overflow: hidden;
 }
 
 .popup0 {
@@ -2371,6 +2267,7 @@ iframe{
 
 .popup0 .content0 {
   height: 80vw;
+  overflow: hidden;
 }
 
 .content0 img{
@@ -2540,9 +2437,10 @@ height: 80vw;
 
 .ftext{
 top:214vw;
-font-size: 4vw;
-padding-left:5%;
+font-size: 3.7vw;
+padding-left:0%;
 height: 16vw;
+text-align: center;
 }
 
 .ftext h2{
@@ -2669,7 +2567,7 @@ margin-right:20vw;
 
             .dscrollcorr{
               position: absolute;
-              top: 680vw;
+              top: 630vw;
               width: 100%;
               height: 40px;
             }
@@ -2727,7 +2625,7 @@ margin-right:20vw;
             }
 
             .bmentors{
-              height:425vw;
+              height:435vw;
             }
           
           .bmentors img{
@@ -2757,7 +2655,7 @@ margin-right:20vw;
         .bment2{
             width:40vw;
             right:30%;
-            top:73vw;
+            top:80vw;
             
         }
         
@@ -2796,7 +2694,7 @@ margin-right:20vw;
                         font-size: 3.8vw;
                         float:left;                   
                         padding-left: 20%;
-                        top:225vw;
+                        top:235vw;
                         left:0;
                        }
                     
@@ -2807,38 +2705,38 @@ margin-right:20vw;
                     .bment4{
                       width:40vw;
                       right:30%;
-                      top:370vw;
+                      top:380vw;
                   }
         
                   .bment5{
                     width:40vw;
                     left:5%;
-                    top:310vw;
+                    top:320vw;
                 }
         
                 .bment6{
                   width:40vw;
                   right:5%;
-                  top:310vw;
+                  top:320vw;
               }
         
               .bment7{
                 width:40vw;
                 right:5%;
-                top:250vw;
+                top:260vw;
             }
         
             .bment8{
               width:40vw;
               left:5%;
-              top:250vw;
+              top:260vw;
           }
         
                       .btrapezoid {
                        
                       height: 64vw;
                         width: 100%;
-                        top:140vw;
+                        top:150vw;
                         left:0;  
                      } 
 
@@ -2863,24 +2761,24 @@ margin-right:20vw;
                       width:90%;
                       left:5%;
                      top:14%;
-                     font-size: 6vw;
+                     font-size: 5.7vw;
                      background-color: rgba(255, 255, 255, 0.856);
                      border-radius: 10px 10px 0 0;
                     } 
 
                     .qt3 h2{
                       
-                      font-size: 9vw;
+                      font-size: 8.7vw;
                      
                     }
 
                     .registration{
                       height:40vw;
-                      font-size: 5vw;
+                      font-size: 4.7vw;
                     }
 
                     .registration h2{
-                      font-size: 7.5vw;
+                      font-size: 7.2vw;
                     }
 
 
@@ -2898,7 +2796,7 @@ margin-right:20vw;
 
                     .whatsappquote{
                       height:42vw;
-                      font-size: 5vw;                   
+                      font-size: 4.7vw;                   
                     }
 
 .whatsappquote h2{
@@ -2912,7 +2810,7 @@ margin-right:20vw;
                     }
 
                     .contact{
-                      height:82vw;
+                      height:95vw;
                       font-size: 4vw;
                       padding-top: 0vw;
                     }
