@@ -331,8 +331,10 @@ font-family: 'Poppins', sans-serif;
 
   .dscrollcorr{
     position: absolute;
-    top: 0;
-    height:40px;
+    top: 113vw;
+    left: 0;
+    height: 40px;
+    width: 100%;
   }
 
 
@@ -1865,8 +1867,9 @@ margin-right:10vw;
 
             .dscrollcorr{
               position: absolute;
-              top: 85vw;
-              height:40px;
+              top: 330vw;
+              width: 100%;
+              height: 40px;
             }
 
             .atrapezoid {
@@ -2666,8 +2669,9 @@ margin-right:20vw;
 
             .dscrollcorr{
               position: absolute;
-              top: 270vw;
-              height:40px;
+              top: 680vw;
+              width: 100%;
+              height: 40px;
             }
 
             .atrapezoid {
