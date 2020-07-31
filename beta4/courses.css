@@ -558,7 +558,7 @@ padding-right: 7%;
   }
 
   .content{
-    height:360vw;
+    height:366vw;
     background-image: url("coursesbg2.png");
     background-position: center;
     background-position-y: bottom;
@@ -569,7 +569,7 @@ padding-right: 7%;
 .title{
     height:9vw;
     width:90%;
-    font-size: 5.3vw;
+    font-size: 4.7vw;
     position: absolute;
     top:12vw;
 }
@@ -601,9 +601,11 @@ padding-right: 7%;
 
   .regline1 {
       position: absolute;
-      top:238vw;
+      top:244vw;
       font-size: 3.6vw;
       left:35%;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
   }
 
   .bt1{                    
@@ -612,25 +614,25 @@ padding-right: 7%;
 
   .csir h2{
     position: absolute;
-    top:252vw;
+    top:258vw;
     font-size: 3.8vw;
 }
 
   .csirp{
     position: absolute;
-    top:260vw;
+    top:266vw;
     font-size: 3.2vw;
   }
 
   .regline2 {
     position: absolute;
-    top:323vw;
+    top:329vw;
     font-size: 3.6vw;
     left:20%;
 }
 
 .contact{
-  height:87vw;
+  height:92vw;
   font-size: 4vw;
   padding-top: 0vw;
 }
@@ -668,21 +670,21 @@ padding-right: 7%;
   width:3.5vw;
   height:3.5vw;
   bottom:3.6vw;
-  left:56vw;
+  left:57vw;
 }
 
 .yround5{
   width:3.5vw;
   height:3.5vw;
   bottom:7.1vw;
-  left:61vw;
+  left:62vw;
 }
 
 .yround6{
   width:3.5vw;
   height:3.5vw;
   bottom:3.6vw;
-  left:56vw;
+  left:57vw;
 }
 
 .socic1{
