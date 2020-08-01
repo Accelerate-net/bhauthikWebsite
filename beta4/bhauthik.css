@@ -147,7 +147,7 @@ font-family: 'Bebas Neue', cursive;
   
   .parallax {
     /* The image used */
-    background-image: url('landingbg.png');
+    background-image: url('assets/img/landingbg.jpeg');
   
     /* Full height */
     height: 100vh; 
@@ -160,7 +160,7 @@ font-family: 'Bebas Neue', cursive;
   }
 
    .parallax2 {
-    background-image: url("whitebg3.png");
+    background-image: url("assets/img/whitebg3.jpeg");
                           overflow: hidden;
                           background-position: center;
                           background-attachment: fixed;
@@ -178,6 +178,76 @@ font-family: 'Bebas Neue', cursive;
     font-family: 'Roboto', sans-serif;
     vertical-align: middle;
     overflow: hidden;
+  }
+
+  .adtitle{
+    position: absolute;
+    left:0;
+    height: 100%;
+    width:180px;
+    background-color: #78290f;
+    color: white;
+    font-size: 25px;
+    vertical-align: middle;
+    font-family:'Roboto', sans-serif ;
+padding-top: 10px;
+padding-right: 5px;
+padding-left: 5px;
+  }
+
+  .newsTicker a{
+    color: black;
+    font-size: 20px;
+  }
+
+  .nextbtn{
+    position: absolute;
+    right:0;
+    font-size: 25px;
+    padding-top: 10px;
+padding-right: 5px;
+padding-left: 5px;
+height: 100%;
+width:30px;
+font-family:'Roboto', sans-serif ;
+font-weight: bolder;
+background-color: #78290f;
+color: white;
+  }
+
+  .ad a:hover{
+    color: white;
+  }
+
+  .prevbtn{
+    position: absolute;
+    /* right:30px; */
+    left:0;
+    font-size: 25px;
+    padding-top: 10px;
+padding-right: 5px;
+padding-left: 5px;
+height: 100%;
+width:30px;
+font-family:'Roboto', sans-serif ;
+font-weight: bolder;
+background-color: #78290f;
+color: white;
+  }
+
+.nextbtn a:hover{
+    color: #fb8b24;
+  }
+
+  .prevbtn a:hover{
+    color: #fb8b24;
+  }
+
+  .newsTicker li{
+    height:50px;
+    font-size: 25px;
+    list-style-type: none;
+    margin-right: 40px;
   }
 
   .logo{
@@ -333,7 +403,7 @@ font-family: 'Poppins', sans-serif;
     height:53vw;
     position: relative;
     text-align: center;
-    background: url("bookbg.png");
+    background: url("assets/img/bookbg.jpeg");
     overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
@@ -497,10 +567,11 @@ padding-left: 0%;
 }
 
 .flip-card-back p{
-    margin-top: 2vw;
+    margin-top: .5vw;
     margin-left:10%;
     margin-right:10%;
-    font-size: 1vw;
+    font-size: .9vw;
+    font-family: 'Poppins', sans-serif;
   }
 
   .philosophy{
@@ -978,7 +1049,7 @@ margin-right:5vw;
                     .joinquote{
                       width:100%;
                       height:25vw;
-                      background: url("whitebook.png");
+                      background: url("assets/img/whitebook.jpeg");
                      position: relative;
                       background-position: center;
                       background-repeat: no-repeat;
@@ -1350,7 +1421,7 @@ margin-right:5vw;
 @media (max-width: 1024px) {
   .parallax {
     /* The image used */
-    background-image: url('tabbg.png');
+    background-image: url('assets/img/tabbg.jpeg');
   
     /* Full height */
     height: 100vh; 
@@ -1483,11 +1554,21 @@ font-size: 2.3vw;
 }
 
 .ad{
-
   font-size: 9px;
   top:20px;
   height:40px;
+}
 
+.nextbtn{
+  padding-top: 5px;
+}
+
+.prevbtn{
+  padding-top: 5px;
+}
+
+.newsTicker li{
+  font-size: 15px;
 }
 
 .ascrollcorr{
@@ -1500,7 +1581,7 @@ font-size: 2.3vw;
 
 .parallax {
   /* The image used */
-  background-image: url('tabbg.png');
+  background-image: url('assets/img/tabbg.jpeg');
 
   /* Full height */
   height: 100vh; 
@@ -1581,7 +1662,7 @@ font-size: 2.3vw;
   height:111.5vw;
   position: relative;
   text-align: center;
-  background: url("bookbg.jpg");
+  background: url("assets/img/bookbg.jpeg");
   overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
@@ -1650,8 +1731,8 @@ margin:0;
 }
 
 .flip-card-back p{
-    margin-top: 4vw;
-    font-size: 2vw;
+    margin-top: 1.5vw;
+    font-size: 1.8vw;
   }
 
   .philosophy{
@@ -2062,6 +2143,25 @@ margin-right:10vw;
 /* ....................................................................................................... */
 
 
+@media (max-width: 700px) {
+  .nextbtn{
+    padding-top: 5px;
+  }
+  
+  .prevbtn{
+    padding-top: 5px;
+  }
+  
+  .newsTicker a{
+    font-size: 12px;
+  }
+}
+
+
+/* ....................................................................................................... */
+/* ....................................................................................................... */
+
+
 @media (max-width: 680px) {
 
   .navbar li {
@@ -2070,14 +2170,6 @@ margin-right:10vw;
 
 .navbar{
   height:30px;
-}
-
-.ad{
-
-  font-size: 6.5px;
-  top:10px;
-  height:30px;
-
 }
 
 .ascrollcorr{
@@ -2244,6 +2336,14 @@ padding-right: 5%;
 padding-left: 5%;
 }
 
+.nextbtn{
+  padding-top: 10px;
+}
+
+.prevbtn{
+  padding-top: 10px;
+}
+
 iframe{
   width:100%;
   overflow: hidden;
@@ -2296,14 +2396,14 @@ font-size: 3.3vw;
 
 .parallax {
   /* The image used */
-  background-image: url('tabbg.png');
+  background-image: url('assets/img/tabbg.jpeg');
 
   /* Full height */
   height: 100vh; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position-y: 20vh;
+  background-position-y: 25vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2325,7 +2425,7 @@ font-size: 3.3vw;
   
   .parallax h2{
   position: relative;
-  top:10vh;
+  top:9vh;
   left:5%;
   font-size: 4.3vw;
   width:90%;
@@ -2343,7 +2443,7 @@ font-size: 3.3vw;
   .coursebox{
   width:44vw;
   height:28vw;
-  top:36vh;
+  top:38vh;
   left:28%;
   }
   
@@ -2382,7 +2482,7 @@ font-size: 3.3vw;
   height:234vw;
   position: relative;
   text-align: center;
-  background: url("bookbg.jpg");
+  background: url("assets/img/bookbg.jpeg");
   overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
@@ -2458,8 +2558,8 @@ margin:0;
   }
   
   .flip-card-back p{
-    margin-top: 4.5vw;
-    font-size: 3.2vw;
+    margin-top: 3vw;
+    font-size: 2.7vw;
   }
   
   .philosophy{
