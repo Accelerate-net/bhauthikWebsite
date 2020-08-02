@@ -6,6 +6,7 @@ body{
     width:100%;
     padding-bottom: 3vw;
     position: relative;
+    height:6vw;
 }
 
 .title{
@@ -16,7 +17,7 @@ body{
     font-weight: 700px;
     float:left;
     padding-top: 1vw;
-    position: relative;
+    position: absolute;
     padding-left: 5%;
 }
 
@@ -52,22 +53,70 @@ box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
     color:white;
   }
 
-/* .content{
-    position:relative;
-    width:100%;
-    background-image: url("assets/img/newsbg.jpeg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size:100% auto;
-} */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 100ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
 
-.conent{
-    padding-top: 10vw;
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 640px;
+  position: relative;
+  transition: all 1s ease-in-out;
+  z-index: 2;
+
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 100ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #fb8b24;
+}
+.popup .content {
+  height: 70%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
 }
 
 .wrapper {
     margin-top:2%;
-    max-height: 40%;
     width:90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -79,15 +128,26 @@ box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     z-index: 1;
+    position: relative;
+    height:auto;
   }
 
-  .wrapper h1 {
+.regbtn a{
+  color: #fb8b24; 
+  text-decoration: none;
+}
+
+  .regbtn a:hover {
+color: black;
+  }
+
+   .wrapper h1 {
     margin: 0;
   padding: 0;
   font-size:2.2vw;
   font-family: 'Do Hyeon', sans-serif;
-  color: rgb(158, 81, 9);
-  padding-top: .5vw;
+  color:#fb8b24;
+  padding-top: 1vw;
 } 
 
 .wrapper h2 {
@@ -95,32 +155,32 @@ box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
   padding:0;
   font-size: 1.3vw;
   font-family: 'Raleway', sans-serif;
-  color: rgb(158, 81, 9); 
-}
+  color: #78290f;
+  padding-top: 1vw;
+} 
 
-  .wrapper li{
+ .wrapcont{
+  position: absolute;
+  left:35%;
+  width:60%;
+  height:auto;
+  top: 0;
+
+} 
+
+   .wrapper p{
     font-size: 1.3vw;
-    list-style-type: square ;
-  }
+  } 
 
 .wrapper:last-child{
     margin-bottom: 5%;
 }
-
-   .product-img {
-    float: left;
-width:14%;
-height:auto;
-border-radius: 7px 0 0 7px;
-overflow: hidden;
-margin-right: 2%;
-  } 
   
-  .product-img img {
+   .product-img img {
     border-radius: 7px 0 0 7px;
-   max-height: 100%;
-   width:100%;
-  } 
+   height: auto;
+   width:30%;
+  }  
 
   .botimg{
       width:100%;
@@ -303,39 +363,71 @@ padding-right: 7%;
 
 @media (max-width: 768px) {
 
+.tbblock{
+  height:12vw;
+}
+
     .title{
         height:8vw;
         width:90%;
         font-size: 4.3vw;
         position: absolute;
-        top:8vw;
+  
     }
     
     .backb{
                           
         width:20%;
         position: absolute;
-        top:3vw;
+        top:5vw;
         right:5vw;
         font-size: 2.3vw;
       }
 
-      .wrapper h1 {
-        font-size:3.2vw;
-      } 
-      
-      .wrapper h2 {
-        font-size: 2vw;
+      iframe{
+        width:400px;
       }
-    
-    .wrapper li{
-      font-size: 2vw;
-    }
+      
+      .popup{
+        width:400px;
+      }
 
-      .product-img {
-        width:25%;
-        float:none;
+          .wrapper {
+       
+            width:90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            overflow: hidden;
+            text-align: center;
+            height: auto;
           }
+    
+          .wrapper h1 {
+            font-size:4.4vw;
+            padding-top:5vw;
+          } 
+          
+          .wrapper h2 {
+            font-size: 3.2vw;
+          }
+          
+          .wrapper p{
+          font-size: 3.2vw;
+          }
+         
+          .wrapcont{
+          position: relative;
+          left:5%;
+          text-align: left;
+          width:90%;
+          height:auto;
+          } 
+      
+             .product-img img{
+              width:100%;
+              border-radius: 7px 7px 0 0;
+                } 
+    
 
     .contact{
         height:65vw;
@@ -414,12 +506,16 @@ padding-right: 7%;
 
 @media (max-width: 480px) {
 
+  .tbblock{
+    height:18vw;
+  }
+
     .title{
         height:9vw;
         width:90%;
         font-size: 4.7vw;
         position: absolute;
-        top:12vw;
+     top:40%;
     }
     
     .backb{
@@ -431,41 +527,50 @@ padding-right: 7%;
         font-size: 3.3vw;
       }
 
-      .product-img {
-        position: relative;
-     width:50%;
-     left:25%;
-     } 
+      iframe{
+        width:80vw;
+      }
+      
+      .popup{
+        width:80vw;
+      }
 
      .wrapper {
-        max-height: 100%;
+       
         width:90%;
         margin-left: 5%;
         margin-right: 5%;
         overflow: hidden;
         text-align: center;
+        height: auto;
       }
 
       .wrapper h1 {
         font-size:4.4vw;
+        padding-top:5vw;
       } 
       
       .wrapper h2 {
         font-size: 3.2vw;
       }
       
-      .wrapper li{
+      .wrapper p{
       font-size: 3.2vw;
-      list-style: none;
-      border-bottom: 1px solid black;
-      padding-top: 1px;
-      padding-bottom: 1px;
       }
      
-     .product-img img{
-       border-radius: 7px 7px 7px 7px;
-      
-     }
+      .wrapcont{
+      position: relative;
+      left:5%;
+      text-align: left;
+      width:90%;
+      height:auto;
+      } 
+  
+         .product-img img{
+          width:100%;
+          border-radius: 7px 7px 0 0;
+            } 
+
 
     .contact{
         height:105vw;
