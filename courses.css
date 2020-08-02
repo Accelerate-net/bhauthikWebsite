@@ -415,7 +415,7 @@ padding-right: 7%;
   }
 
   .content{
-    height:310vw;
+    height:320vw;
     background-image: url("assets/img/coursebg2.jpeg");
     background-position: center;
     background-position-y: bottom;
@@ -458,7 +458,7 @@ padding-right: 7%;
 
   .regline1 {
       position: absolute;
-      top:138vw;
+      top:143vw;
       font-size: 2.6vw;
       left:38%;
   }
@@ -469,13 +469,13 @@ padding-right: 7%;
 
   .csir h2{
     position: absolute;
-    top:148vw;
+    top:152vw;
     font-size: 2.8vw;
 }
 
   .csirp{
     position: absolute;
-    top:152vw;
+    top:157vw;
     font-size: 2.2vw;
   }
 
@@ -485,7 +485,7 @@ padding-right: 7%;
 
   .regline2 {
     position: absolute;
-    top:275vw;
+    top:286vw;
     font-size: 2.6vw;
     left:30%;
 }
@@ -575,7 +575,7 @@ padding-right: 7%;
   }
 
   .content{
-    height:540vw;
+    height:554vw;
     background-image: url("assets/img/coursebg2.jpeg");
     background-position: center;
     background-position-y: bottom;
@@ -618,7 +618,7 @@ padding-right: 7%;
 
   .regline1 {
       position: absolute;
-      top:244vw;
+      top:246vw;
       font-size: 3.6vw;
       left:35%;
       padding-top: 1vw;
@@ -631,13 +631,13 @@ padding-right: 7%;
 
   .csir h2{
     position: absolute;
-    top:258vw;
+    top:260vw;
     font-size: 3.8vw;
 }
 
   .csirp{
     position: absolute;
-    top:266vw;
+    top:268vw;
     font-size: 3.2vw;
   }
 
@@ -647,7 +647,7 @@ padding-right: 7%;
 
   .regline2 {
     position: absolute;
-    top:500vw;
+    top:513vw;
     font-size: 3.6vw;
     left:20%;
 }
